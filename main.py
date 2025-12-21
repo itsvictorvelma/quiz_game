@@ -13,8 +13,8 @@ def quiz_game():
     # Prepare the list of Question objects from raw data
     question_bank = []
     for item in question_data:
-        question_text = item['text']
-        question_answer = item['answer']
+        question_text = item['question']
+        question_answer = item['correct_answer']
         new_question = Question(question_text, question_answer)
         question_bank.append(new_question)
 
